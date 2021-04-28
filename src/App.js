@@ -10,7 +10,6 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
-//You must add your own API key here from Clarifai.
 const app = new Clarifai.App({
   apiKey: '3c8c4ffbb3a1475ab4cfcabf05eaf7cf'
 });
@@ -128,7 +127,6 @@ class App extends Component {
             <Logo />
             <Rank
               name={this.state.user.name}
-              entries={this.state.user.entries}
             />
             <ImageLinkForm
               onInputChange={this.onInputChange}
