@@ -15,6 +15,5 @@ button {
 }
 
 article {
-  margin: 5px !important;
   border: 2px black red !important;
 }
